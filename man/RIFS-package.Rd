@@ -4,16 +4,15 @@
 \docType{package}
 \title{Random Iterated Function System (RIFS)}
 \description{
-RIFS package provides functionality for generating & plotting prefractal sets in R^n with various protofractal sets, probability distribution, and partition coefficient for iterative segments.
+Pointwise generation and display of attractors (prefractals) of the random iterated function system (RIFS) for various combinations of probabilistic and geometric parameters of some fixed point sets (protofractals), described by Bukhovets A.G. (2012) <doi:10.1134/S0005117912020154>.
 }
 \details{
 \tabular{ll}{
 Package: \tab RIFS\cr
 Type: \tab Package\cr
-Version: \tab 0.1-5\cr
-Date: \tab 2012-06-04\cr
+Version: \tab 0.1.6\cr
+Date: \tab 2022-05-08\cr
 License: \tab GPL-3\cr
-LazyLoad: \tab yes\cr
 }
 \code{plotR2pre()} function draws a prefractal set in R^2.\cr
 \code{preRIFS()} function generates a sample of fractal points (a prefractal points) in R^n with a random iterated function system (RIFS).\cr

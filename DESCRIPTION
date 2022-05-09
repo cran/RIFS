@@ -1,18 +1,13 @@
 Package: RIFS
 Type: Package
-Version: 0.1-5
-Date: 2012-06-04
-Title: Random Iterated Function System (RIFS)
-Author: Pavel V. Moskalev, Alexey G. Bukhovets and Tatyana Ya.
-        Biruchinskay
+Title: Random Iterated Function System
+Version: 0.1.6
+Author: Pavel V. Moskalev, Alexey G. Bukhovets and Tatyana Ya. Biruchinskay
 Maintainer: Pavel V. Moskalev <moskalefff@gmail.com>
-Description: RIFS package provides functionality for generating &
-        plotting prefractals in R^n with various protofractal sets and
-        partition coefficient for iterative segments
-Depends: R (>= 2.14.0)
+Description: Pointwise generation and display of attractors (prefractals) of the random iterated function system (RIFS) for various combinations of probabilistic and geometric parameters of some fixed point sets (protofractals), described by Bukhovets A.G. (2012) <doi:10.1134/S0005117912020154>.
 License: GPL-3
-LazyLoad: yes
-URL: http://www.r-project.org
-Packaged: 2012-06-04 14:58:42 UTC; paule
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2022-05-08 07:06:10 UTC; moska
 Repository: CRAN
-Date/Publication: 2012-06-05 05:58:58
+Date/Publication: 2022-05-09 07:40:02 UTC

@@ -5,7 +5,7 @@
 \code{preRSum0()} function generates a sample of fractal (prefractal) points in R^n with a matrix of random sums of a numerical series.
 }
 \usage{
-preRSum0(n=10000, mu=1, eps=1e-9, Z=R2ngon(), 
+preRSum0(n=10000, mu=1, eps=1e-9, Z=R2ngon(),
          P=rep(1/nrow(Z), times=nrow(Z)))
 }
 \arguments{
@@ -35,8 +35,8 @@ where \code{i in seq(n)}; \code{j in seq(k)}; \code{k <- nrow(Z)}; \code{X <- mu
 \concept{random iterated function system}
 \author{Pavel V. Moskalev, Alexey G. Bukhovets and Tatyana Ya. Biruchinskay}
 \references{
-Bukhovets, A.G. and Bukhovets, E.A. (2012), Modeling of fractal data structures. \emph{Automation and Remote Control}, Vol.73, No.2, pp.381-385.\cr
-Bukhovetc, A.G. and Biruchinskay, T.Y. (2011), Modelling fractal's properties of system objects. \emph{Proceedings of Voronezh State University. Series: Systems Analysis and Information Technologies}, No.2 (July-December), pp.22-26; in Russian.
+Bukhovets A.G. and Bukhovets E.A. (2012) Modeling of fractal data structures. \emph{Automation and Remote Control}, Vol.73, No.2, pp.381-385, doi:10.1134/S0005117912020154.\cr
+Bukhovetc A.G. and Biruchinskay T.Y. (2011) Modelling fractal's properties of system objects. \emph{Proceedings of Voronezh State University. Series: Systems Analysis and Information Technologies}, No.2 (July-December), pp.22-26; in Russian.
 }
 \examples{
 # Example 1a. Sierpinski triangle, 1st order, p=const, mu=const
@@ -45,6 +45,7 @@ plot(l$proto, asp=1, col="red",
      main="Prefractal points for 3-gon: k=3; p=1/3; mu=1")
 points(l$pre, pch=46, col="red")
 
+\dontrun{
 # Example 1b. Sierpinski triangle, 1st order, p=var, mu=const
 l <- preRSum0(P=c(2,2,5)/9)
 plot(l$proto, asp=1, col="red",
@@ -53,13 +54,14 @@ points(l$pre, pch=46, col="red")
 
 # Example 2a. Sierpinski square, 2nd order, p=const, mu=const
 l <- preRSum0(Z=R2ngon(4,2), mu=2)
-plot(l$proto, asp=1, col="red", 
+plot(l$proto, asp=1, col="red",
      main="Prefractal points for 4-gon: k=8, p=1/8, mu=2")
 points(l$pre, pch=46, col="red")
 
 # Example 2b. Sierpinski square, 2nd order, p=var, mu=const
 l <- preRSum0(Z=R2ngon(4,2), P=2^abs(seq(-3,4))/45, mu=2)
-plot(l$proto, asp=1, col="red", 
+plot(l$proto, asp=1, col="red",
      main="Prefractal points for 4-gon: k=8, p=2^|-3:4|/45, mu=2")
 points(l$pre, pch=46, col="red")
+}
 }
